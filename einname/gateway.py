@@ -47,6 +47,7 @@ class Gateway:
 
             await asyncio.sleep(self._heartbeat / 1000)
 
+    # TODO: Add reconnecting
     async def _connect(self):
         logger.debug("Connecting to Discord gateway")
 
